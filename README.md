@@ -4,10 +4,11 @@
 # Food Delivery Project
 [پارسی](README_FA.md)
 
-## Detailed Readme
-- [Backend](backend/README.md)
-- [Frontend](#tech-stack)
-- [Prerequisites](#prerequisites)
+
+### 🔗 Links to Part READMEs
+- [Backend (Django)](backend/README.md)
+- [Frontend (ReactJS)](frontend/README.md)
+- [Mobile App (Flutter)](../mobile_app/README.md)
 
 
 ## Table of Contents
@@ -93,10 +94,5 @@ flutter run
 |----------------------|----------------------|
 |<img src="screenshots/home_screen.png" style="height:400px;">|<img src="screenshots/single-sreen.png" style="height:400px">|
 
-
-### 🔗 Links to Part READMEs
-- [Backend (Django)](../backend/README.md)
-- [Frontend (ReactJS)](../frontend/README.md)
-- [Mobile App (Flutter)](../mobile_app/README.md)
 
 📄 Read this in [Persian](README_FA.md)
