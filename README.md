@@ -90,9 +90,9 @@ flutter run
 
 
 #### Mobile App
-| Home | Food Screen |
-|----------------------|----------------------|
-|<img src="screenshots/home_screen.png" style="height:400px;">|<img src="screenshots/single-sreen.png" style="height:400px">|
+| Home                                                                 | Food Screen                                                         |
+|----------------------------------------------------------------------|---------------------------------------------------------------------|
+| <img src="mobile/screenshots/home_screen.png" style="height:400px;"> | <img src="mobile/screenshots/food_screen.png" style="height:400px"> |
 
 
 📄 Read this in [Persian](README_FA.md)

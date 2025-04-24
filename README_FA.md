@@ -86,9 +86,9 @@ flutter run
 |<img src="screenshots/map-windows.png" style="width:100%">|<img src="screenshots/home-windows.png" style="width:100%">|
 
 #### اپ موبایل
-| صفحه غذا | صفحه خانه |
-|----------------------|----------------------|
-|<img src="screenshots/single-sreen.png" style="height:400px">|<img src="screenshots/home_screen.png" style="height:400px;">|  
+| صفحه غذا                                                            | صفحه خانه                                                            |
+|---------------------------------------------------------------------|----------------------------------------------------------------------|
+| <img src="mobile/screenshots/food_screen.png" style="height:400px"> | <img src="mobile/screenshots/home_screen.png" style="height:400px;"> |  
 
 
 📄 این فایل را به [انگلیسی بخوانید](README.md)

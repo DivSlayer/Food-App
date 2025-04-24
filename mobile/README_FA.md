@@ -78,6 +78,11 @@
   flutter run -d ios
   ```
 
+## اسکرین شات ها
+| Home Screen                                                  | Food Screen                                                   | Map Screen                                                   |
+|--------------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------------|
+| <img src="screenshots/home_screen.png" style="height:400px"> | <img src="screenshots/food_screen.png" style="height:400px;"> | <img src="screenshots/map_screen.png" style="height:400px;"> | 
+
 ## آزمون‌ها
 
 اجرای تست‌ها:

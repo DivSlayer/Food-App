@@ -11,6 +11,7 @@ This directory contains the Flutter mobile application for the Food Delivery Pro
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Running the App](#running-the-app)
+- [Screenshots](#screenshots)
 - [Testing](#testing)
 - [Contributing](#contributing)
 
@@ -77,6 +78,12 @@ The Flutter app provides a cross-platform mobile interface for customers and del
   flutter run -d ios
   ```
   
+## Screenshots
+| Home Screen                                                  | Food Screen                                                   | Map Screen                                                   |
+|--------------------------------------------------------------|---------------------------------------------------------------|--------------------------------------------------------------|
+| <img src="screenshots/home_screen.png" style="height:400px"> | <img src="screenshots/food_screen.png" style="height:400px;"> | <img src="screenshots/map_screen.png" style="height:400px;"> | 
+
+
 ## Testing
 
 Run widget and integration tests:
