@@ -4,6 +4,14 @@
 # Food Delivery Project
 [پارسی](README_FA.md)
 
+## Detailed Readme
+- [Backend](backend/README.md)
+- [Frontend](#tech-stack)
+- [Prerequisites](#prerequisites)
+
+
+## Table of Contents
+
 This repository contains a full-stack food delivery application, including:
 
 - **Backend**: Django REST API
