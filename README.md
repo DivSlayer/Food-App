@@ -5,12 +5,6 @@
 [پارسی](README_FA.md)
 
 
-### 🔗 Links to Part READMEs
-- [Backend (Django)](backend/README.md)
-- [Frontend (ReactJS)](frontend/README.md)
-- [Mobile App (Flutter)](../mobile_app/README.md)
-
-
 ## Table of Contents
 
 This repository contains a full-stack food delivery application, including:
@@ -20,6 +14,12 @@ This repository contains a full-stack food delivery application, including:
 - **Mobile App**: Flutter cross-platform application
 
 Each component has its own dedicated README with detailed setup and usage instructions. See the sections below for links.
+
+### 🔗 Links to Part READMEs
+- [Backend (Django)](backend/README.md)
+- [Frontend (ReactJS)](frontend/README.md)
+- [Mobile App (Flutter)](../mobile_app/README.md)
+
 
 ---
 
