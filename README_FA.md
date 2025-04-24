@@ -17,7 +17,7 @@
 ### 🔗 لینک فایل های README
 - [Backend (Django)](backend/README.md)
 - [Frontend (ReactJS)](frontend/README.md)
-- [Mobile App (Flutter)](../mobile_app/README.md)
+- [Mobile App (Flutter)](mobile/README.md)
 
 ---
 
@@ -90,11 +90,6 @@ flutter run
 |----------------------|----------------------|
 |<img src="screenshots/single-sreen.png" style="height:400px">|<img src="screenshots/home_screen.png" style="height:400px;">|  
 
-### 🔗 لینک فایل‌های README بخش‌ها
-
-- [بک‌اند (Django)](../backend/README.md)  
-- [فرانت‌اند (ReactJS)](../frontend/README.md)  
-- [اپ موبایل (Flutter)](../mobile_app/README.md)  
 
 📄 این فایل را به [انگلیسی بخوانید](README.md)
 
