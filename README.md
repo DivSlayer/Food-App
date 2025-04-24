@@ -2,6 +2,7 @@
 ![alt-text](mockups/banner.png "Header Card")
 
 # Food Delivery Project
+[پارسی](README_FA.md)
 
 This repository contains a full-stack food delivery application, including:
 
