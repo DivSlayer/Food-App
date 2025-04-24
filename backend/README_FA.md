@@ -1,7 +1,7 @@
 <div dir="rtl" style="text-align: right">
 
 # بک‌اند (Django) – پروژه تحویل غذا
-[English](README.md)
+[English <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/svg/us.svg" width="20"/>](README.md)
 
 ## فهرست مطالب
 
@@ -103,14 +103,14 @@ python manage.py runserver
 
 ### API داشبورد
 
-| نقطه انتهایی                          | روش             | توضیحات                                                                    |
-|---------------------------------------|-----------------|----------------------------------------------------------------------------|
-| `/api/dashboard/token/`               | POST            | دریافت توکن احراز هویت                                                     |
-| `/api/dashboard/token/refresh/`       | POST            | بررسی توکن رفرش و بازگرداندن توکن دسترسی جدید                             |
-| `/api/dashboard/details`              | GET             | بازگرداندن جزئیات رستوران                                                 |
-| `/api/dashboard/transaction/`         | GET یا POST     | بازگرداندن لیست تراکنش‌های رستوران و ایجاد تراکنش جدید                    |
-| `/api/dashboard/food/`                | GET یا POST     | بازگرداندن لیست غذاهای رستوران و ایجاد غذای جدید                          |
-| ...                                   | ...             | ...                                                                        |
+| نقطه انتهایی                    | روش         | توضیحات                                                |
+|---------------------------------|-------------|--------------------------------------------------------|
+| `/api/dashboard/token/`         | POST        | دریافت توکن احراز هویت                                 |
+| `/api/dashboard/token/refresh/` | POST        | بررسی توکن رفرش و بازگرداندن توکن دسترسی جدید          |
+| `/api/dashboard/details`        | GET         | بازگرداندن جزئیات رستوران                              |
+| `/api/dashboard/transaction/`   | GET یا POST | بازگرداندن لیست تراکنش‌های رستوران و ایجاد تراکنش جدید |
+| `/api/dashboard/food/`          | GET یا POST | بازگرداندن لیست غذاهای رستوران و ایجاد غذای جدید       |
+| ...                             | ...         | ...                                                    |
 
 ### API مشتری
 

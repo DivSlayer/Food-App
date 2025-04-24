@@ -2,7 +2,7 @@
 ![alt-text](mockups/banner.png "Header Card")
 
 # Food Delivery Project
-[پارسی](README_FA.md)
+[پارسی <img src="./svgs/ir_flag.svg" width="20"/>](README_FA.md)
 
 
 ## Table of Contents

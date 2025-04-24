@@ -4,7 +4,7 @@
 <div dir="rtl" style="text-align: right">
 
 # پروژه سفارش غذای آنلاین
-[English](README.md)
+[English <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/svg/us.svg" width="20"/>](README.md)
 
 این مخزن شامل یک سامانه کامل سفارش غذای آنلاین است که شامل:
 

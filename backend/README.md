@@ -1,6 +1,7 @@
 
 # Backend (Django) – Food Delivery Project
-[پارسی](README_FA.md)
+[پارسی <img src="../svgs/ir_flag.svg" width="20"/>](README_FA.md)
+
 
 This directory contains the Django REST API backend for the Food Delivery Project.
 
