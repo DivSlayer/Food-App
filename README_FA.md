@@ -1,7 +1,7 @@
 
 ![alt-text](mockups/banner.png "Header Card")
 
-<div dir="rtl">
+<div dir="rtl" style="text-align: right">
 
 # پروژه سفارش غذای آنلاین
 [English](README.md)
