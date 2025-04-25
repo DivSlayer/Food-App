@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>single_transaction.scss</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #bcbec4;}
+.s4 { color: #d5b778;}
+.s5 { color: #bababa;}
+.s6 { color: #bcbec4;}
+.s7 { color: #6d9cbe;}
+.s8 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+single_transaction.scss</font>
+</center></td></tr></table>
+<pre><span class="s0">@import </span><span class="s2">&quot;../../styles/colors&quot;</span><span class="s3">;</span>
+
+<span class="s3">.</span><span class="s4">single-transaction </span><span class="s3">{</span>
+  <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+  <span class="s5">align-items</span><span class="s6">: </span><span class="s2">flex-start</span><span class="s3">;</span>
+  <span class="s5">flex-direction</span><span class="s6">: </span><span class="s2">column</span><span class="s3">;</span>
+  <span class="s5">background-color</span><span class="s6">: </span><span class="s7">$lightBgColor</span><span class="s3">;</span>
+  <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+  <span class="s5">height</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+  <span class="s5">padding</span><span class="s6">: </span><span class="s8">20</span><span class="s2">px</span><span class="s3">;</span>
+  <span class="s5">border-radius</span><span class="s6">: </span><span class="s8">15</span><span class="s2">px</span><span class="s3">;</span>
+  <span class="s5">row-gap</span><span class="s6">: </span><span class="s8">50</span><span class="s2">px</span><span class="s3">;</span>
+
+  <span class="s3">.</span><span class="s4">loading </span><span class="s3">{</span>
+    <span class="s5">margin</span><span class="s6">: </span><span class="s8">30</span><span class="s2">px auto </span><span class="s8">0</span><span class="s3">;</span>
+    <span class="s5">height</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+    <span class="s5">display</span><span class="s6">: </span><span class="s2">grid</span><span class="s3">;</span>
+    <span class="s5">place-items</span><span class="s6">: </span><span class="s2">center</span><span class="s3">;</span>
+  <span class="s3">}</span>
+
+  <span class="s3">.</span><span class="s4">details </span><span class="s3">{</span>
+    <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+    <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+    <span class="s5">align-items</span><span class="s6">: </span><span class="s2">flex-start</span><span class="s3">;</span>
+    <span class="s5">flex-direction</span><span class="s6">: </span><span class="s2">column</span><span class="s3">;</span>
+
+    <span class="s3">.</span><span class="s4">title </span><span class="s3">{</span>
+      <span class="s5">font-weight</span><span class="s6">: </span><span class="s8">400</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s3">.</span><span class="s4">details-holder </span><span class="s3">{</span>
+      <span class="s5">border-radius</span><span class="s6">: </span><span class="s8">15</span><span class="s2">px</span><span class="s3">;</span>
+      <span class="s5">background-color</span><span class="s6">: </span><span class="s7">$bgColor</span><span class="s3">;</span>
+      <span class="s5">padding</span><span class="s6">: </span><span class="s8">20</span><span class="s2">px</span><span class="s3">;</span>
+      <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+      <span class="s5">margin-top</span><span class="s6">: </span><span class="s8">20</span><span class="s2">px</span><span class="s3">;</span>
+      <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+      <span class="s5">align-items</span><span class="s6">: </span><span class="s2">center</span><span class="s3">;</span>
+      <span class="s5">column-gap</span><span class="s6">: </span><span class="s8">2</span><span class="s3">%;</span>
+      <span class="s5">flex-wrap</span><span class="s6">: </span><span class="s2">wrap</span><span class="s3">;</span>
+      <span class="s5">row-gap</span><span class="s6">: </span><span class="s8">25</span><span class="s2">px</span><span class="s3">;</span>
+
+      <span class="s4">li </span><span class="s3">{</span>
+        <span class="s5">width</span><span class="s6">: </span><span class="s8">32</span><span class="s3">%;</span>
+        <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+        <span class="s5">align-items</span><span class="s6">: </span><span class="s2">center</span><span class="s3">;</span>
+        <span class="s5">column-gap</span><span class="s6">: </span><span class="s8">7</span><span class="s2">px</span><span class="s3">;</span>
+
+        <span class="s4">&amp;</span><span class="s3">.</span><span class="s4">big </span><span class="s3">{</span>
+          <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+        <span class="s3">}</span>
+
+        <span class="s4">span</span><span class="s3">.</span><span class="s4">label </span><span class="s3">{</span>
+          <span class="s5">font-size</span><span class="s6">: </span><span class="s8">14</span><span class="s2">px</span><span class="s3">;</span>
+          <span class="s5">font-weight</span><span class="s6">: </span><span class="s8">300</span><span class="s3">;</span>
+        <span class="s3">}</span>
+
+        <span class="s4">span</span><span class="s3">.</span><span class="s4">value </span><span class="s3">{</span>
+          <span class="s5">font-size</span><span class="s6">: </span><span class="s8">15</span><span class="s2">px</span><span class="s3">;</span>
+          <span class="s5">font-weight</span><span class="s6">: </span><span class="s8">500</span><span class="s3">;</span>
+
+        <span class="s3">}</span>
+      <span class="s3">}</span>
+    <span class="s3">}</span>
+  <span class="s3">}</span>
+
+  <span class="s3">.</span><span class="s4">sec-holder </span><span class="s3">{</span>
+    <span class="s5">height</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+    <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+
+    <span class="s3">.</span><span class="s4">sec-header </span><span class="s3">{</span>
+      <span class="s5">font-weight</span><span class="s6">: </span><span class="s8">400</span><span class="s3">;</span>
+    <span class="s3">}</span>
+
+    <span class="s3">.</span><span class="s4">items </span><span class="s3">{</span>
+      <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+      <span class="s5">margin-top</span><span class="s6">: </span><span class="s8">20</span><span class="s2">px</span><span class="s3">;</span>
+      <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+      <span class="s5">align-items</span><span class="s6">: </span><span class="s2">flex-start</span><span class="s3">;</span>
+      <span class="s5">column-gap</span><span class="s6">: </span><span class="s8">2</span><span class="s3">%;</span>
+      <span class="s5">flex-wrap</span><span class="s6">: </span><span class="s2">wrap</span><span class="s3">;</span>
+      <span class="s5">row-gap</span><span class="s6">: </span><span class="s8">25</span><span class="s2">px</span><span class="s3">;</span>
+      <span class="s5">flex-direction</span><span class="s6">: </span><span class="s2">column</span><span class="s3">;</span>
+      <span class="s5">overflow-y</span><span class="s6">: </span><span class="s2">auto</span><span class="s3">;</span>
+
+      <span class="s3">.</span><span class="s4">order </span><span class="s3">{</span>
+        <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+        <span class="s5">flex-direction</span><span class="s6">: </span><span class="s2">column</span><span class="s3">;</span>
+        <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+        <span class="s5">border-radius</span><span class="s6">: </span><span class="s8">15</span><span class="s2">px</span><span class="s3">;</span>
+        <span class="s5">background-color</span><span class="s6">: </span><span class="s7">$bgColor</span><span class="s3">;</span>
+        <span class="s5">padding</span><span class="s6">: </span><span class="s8">20</span><span class="s2">px</span><span class="s3">;</span>
+
+        <span class="s3">.</span><span class="s4">food </span><span class="s3">{</span>
+          <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+          <span class="s5">align-items</span><span class="s6">: </span><span class="s2">center</span><span class="s3">;</span>
+          <span class="s5">column-gap</span><span class="s6">: </span><span class="s8">10</span><span class="s2">px</span><span class="s3">;</span>
+
+          <span class="s3">.</span><span class="s4">name </span><span class="s3">{</span>
+            <span class="s5">font-weight</span><span class="s6">: </span><span class="s8">400</span><span class="s3">;</span>
+          <span class="s3">}</span>
+
+          <span class="s3">.</span><span class="s4">image </span><span class="s3">{</span>
+            <span class="s4">img </span><span class="s3">{</span>
+              <span class="s5">width</span><span class="s6">: </span><span class="s8">70</span><span class="s2">px</span><span class="s3">;</span>
+              <span class="s5">height</span><span class="s6">: </span><span class="s8">70</span><span class="s2">px</span><span class="s3">;</span>
+            <span class="s3">}</span>
+          <span class="s3">}</span>
+        <span class="s3">}</span>
+
+        <span class="s3">.</span><span class="s4">extras</span><span class="s3">{</span>
+          <span class="s5">width</span><span class="s6">: </span><span class="s8">100</span><span class="s3">%;</span>
+          <span class="s5">display</span><span class="s6">: </span><span class="s2">flex</span><span class="s3">;</span>
+          <span class="s5">flex-direction</span><span class="s6">: </span><span class="s2">column</span><span class="s3">;</span>
+          <span class="s5">align-items</span><span class="s6">: </span><span class="s2">flex-start</span><span class="s3">;</span>
+        <span class="s3">}</span>
+      <span class="s3">}</span>
+    <span class="s3">}</span>
+  <span class="s3">}</span>
+<span class="s3">}</span>
+</pre>
+</body>
+</html>

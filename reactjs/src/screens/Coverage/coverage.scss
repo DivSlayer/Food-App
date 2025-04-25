@@ -1,0 +1,76 @@
+@import "../../styles/colors";
+
+.coverage {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 30px;
+
+  .loader-sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lightBgColor;
+    border-radius: 15px;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .header {
+      font-weight: 500;
+    }
+
+    .btn {
+      font-size: 12px;
+
+      &.hidden {
+        opacity: 0;
+      }
+    }
+  }
+
+  .map-section {
+    & > * {
+      transition: all 0s ease;
+    }
+
+    height: 100%;
+    width: 100%;
+    background-color: $lightBgColor;
+    border-radius: 20px;
+    padding: 15px;
+    position: relative;
+
+    .leaflet-container {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    .get-location {
+      position: absolute;
+      bottom: 35px;
+      left: 35px;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: $lightBgColor;
+      z-index: 20;
+      padding: 10px;
+      cursor: pointer;
+
+      svg, svg path {
+        stroke: $yellowColor;
+      }
+    }
+  }
+}

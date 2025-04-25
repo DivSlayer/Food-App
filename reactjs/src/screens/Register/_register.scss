@@ -1,0 +1,119 @@
+@import "../../styles/colors";
+
+.register-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .register-card {
+    border-radius: 25px;
+    background-color: $lightBgColor;
+    width: 50%;
+    height: 70%;
+    position: relative;
+
+    .register-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: $bgColor;
+      padding: 20px;
+      position: absolute;
+      left: 50%;
+      top: -35px;
+      transform: translate(-50%, 0);
+      display: grid;
+      place-items: center;
+
+      svg, svg path {
+        color: $yellowColor;
+      }
+    }
+
+    .register-header {
+      margin-top: 50px;
+
+      h1 {
+        font-weight: 500;
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+
+    .register-form {
+      height: 80%;
+      padding: 50px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .inputs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 2%;
+        flex-wrap: wrap;
+        row-gap: 25px;
+
+        .form-group {
+          width: 48%;
+        }
+      }
+
+      .funcs {
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 15px;
+        margin: 0 auto;
+
+        .register-btn {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .register-section {
+    .register-card {
+      width: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 820px) {
+  .register-section {
+    overflow: unset;
+    height: unset;
+
+    .register-card {
+      height: 90%;
+
+      .register-form {
+        .inputs {
+          flex-direction: column;
+
+          .form-group {
+            width: 85%;
+          }
+        }
+
+        .funcs {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

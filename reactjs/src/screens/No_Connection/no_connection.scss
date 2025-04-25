@@ -1,0 +1,55 @@
+@import "../../styles/colors";
+
+.no-connection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: $bgColor;
+
+  .container {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: $lightBgColor;
+    padding: 20px;
+    row-gap: 40px;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .vector{
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .no-connection{
+    .container{
+      width: 80%;
+      height: 80%;
+      h1{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px){
+  .no-connection{
+    .container{
+      width: 90%;
+      height: 70%;
+      h1{
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+@import "styles/colors";
+@import "styles/margins";
+@import "styles/forms";
+@import "components/buttons/btns";
+@import "styles/section";
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dana', sans-serif;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  outline: none;
+  direction: rtl;
+}
+
+input::placeholder {
+  color: $lightTextColor;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: $textColor;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $bgColor;
+}
+
+.main {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  padding: 50px 5% 50px 5%;
+  column-gap: 50px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.content {
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 30px;
+}
+
+.yellow-color {
+  color: $yellowColor !important;
+}
+
+
+.red-color {
+  color: $redColor !important;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+
+.main-loading {
+  width: 100%;
+  height: 100%;
+  background-color: $lightBgColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+
+  &.fixed {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .main {
+    display: block;
+  }
+  .content {
+    padding: 100px 5%;
+  }
+
+  .main-container {
+    height: calc(100% - 80px);
+    margin-top: 79px;
+  }
+}
+
+.status {
+  text-align: center;
+  font-size: 12px;
+  color: #fff !important;
+  border-radius: 5px;
+  padding: 7px;
+
+  &.pe {
+    background-color: $blueColor;
+  }
+
+  &.ac {
+    background-color: $greenColor;
+  }
+
+  &.de {
+    background-color: $redColor;
+  }
+
+  &.ca {
+    background-color: $yellowColor;
+  }
+
+  &.co {
+    background-color: $purpleColor;
+  }
+
+  &.ci {
+    background-color: $blueColor;
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.col-gap-1 {
+  column-gap: 5px;
+}
+
+.col-gap-2 {
+  column-gap: 7px;
+}
+
+.col-gap-3 {
+  column-gap: 15px;
+}
+
+.toastify {
+  font-family: "Dana", sans-serif !important;
+
+}
+
+.error-text {
+  color: $redColor !important;
+  font-size: 10px !important;
+  font-weight: normal;
+  margin-top: 10px;
+}

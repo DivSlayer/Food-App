@@ -1,0 +1,14 @@
+@import "../../../styles/colors";
+// TransactionSection Start
+.transaction-section {
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    .section-items {
+      li {
+        width: 49%;
+      }
+    }
+  }
+}

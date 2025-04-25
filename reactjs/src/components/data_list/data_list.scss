@@ -1,0 +1,17 @@
+@import '../../styles/_colors';
+.data-list {
+    width: 100%;
+    .section-header {
+        .header {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .add-btn {
+            font-size: 14px;
+            color: #fff;
+            &:hover{
+                color: $yellowColor;
+            }
+        }
+    }
+}

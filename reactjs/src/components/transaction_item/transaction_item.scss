@@ -1,0 +1,59 @@
+@import "../../styles/colors";
+.transaction-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  height: unset !important;
+  a {
+    @extend .transaction-item;
+    width: 100%;
+  }
+  .percentage {
+    position: relative;
+    height: 70px;
+    width: 70px;
+
+    .custom-circular-progress {
+      height: 70px !important;
+      width: 70px !important;
+      stroke-linecap: round;
+      color: $blueColor;
+    }
+
+    .percent {
+      position: absolute;
+      font-size: 12px;
+      color: $blueColor;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .details {
+    display: flex;
+    align-items: flex-start;
+    row-gap: 15px;
+    flex-direction: column;
+
+    p {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      &.active {
+        span {
+          color: $textColor;
+        }
+      }
+
+      span {
+        font-size: 12px;
+        color: $lightTextColor;
+
+      }
+    }
+  }
+
+}

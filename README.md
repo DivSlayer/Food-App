@@ -84,9 +84,9 @@ flutter run
 
 #### Web Frontend
 
-| Home | Map Screen |
-|----------------------|----------------------|
-|<img src="screenshots/home-windows.png" style="width:100%">|<img src="screenshots/map-windows.png" style="width:100%">|
+| Home                                                               | Map Screen                                                        |
+|--------------------------------------------------------------------|-------------------------------------------------------------------|
+| <img src="reactjs/screenshots/home_screen.png" style="width:100%"> | <img src="reactjs/screenshots/map_screen.png" style="width:100%"> |
 
 
 #### Mobile App

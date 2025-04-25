@@ -1,0 +1,122 @@
+@import "../styles/colors";
+
+.navbar {
+  background-color: $lightBgColor;
+  width: 90px;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px;
+  position: sticky !important;
+  top: 0 !important;
+  right: 0;
+
+  &.expand {
+    width: 250px;
+
+    li {
+      p {
+        transition: all 0.2s ease;
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  .top, .middle, .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navs {
+    li {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      margin-bottom: 20px;
+
+      p {
+        transition: all 0.2s ease;
+        opacity: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      padding: 15px;
+      display: block;
+      position: relative;
+
+      .count {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: $yellowColor;
+        top: 5px;
+        right: -2px;
+        display: grid;
+        place-items: center;
+
+        span {
+          font-size: 10px;
+          font-weight: 500;
+          color: #fff;
+        }
+      }
+
+      svg, svg path {
+        color: $textColor;
+        transition: all 0.2s ease;
+      }
+
+      &.fill:hover {
+        svg, svg path {
+          fill: #fff;
+        }
+      }
+
+      &:hover {
+        background-color: $yellowColor;
+
+        .count {
+          background-color: $yellowColor;
+        }
+
+        svg, svg path {
+          color: #fff;
+          transition: all 0.2s ease;
+        }
+      }
+
+      &.active {
+        background-color: $yellowColor;
+
+        svg, svg path {
+          color: #fff;
+          transition: all 0.2s ease;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .navbar {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../styles/colors";
+
+@mixin button-style($color,$hoverTColor,$hoverSColor) {
+  background-color: $color;
+  color: #fff;
+  border-color: $color;
+
+  i, svg, path {
+    color: #fff;
+    stroke: #fff;
+  }
+  path.fill {
+    fill: #fff;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $hoverTColor;
+
+    span {
+      color: $hoverTColor;
+    }
+
+    i, svg, path {
+      color: $hoverSColor;
+      stroke: $color;
+    }
+
+    path.fill {
+      fill: $color;
+    }
+  }
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 7px 20px;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &.yellow-btn {
+    @include button-style($yellowColor, $yellowColor, $yellowColor);
+  }
+
+  &.red-btn {
+    @include button-style($redColor, $redColor, $redColor)
+  }
+
+  &.blue-btn {
+    @include button-style($blueColor, $blueColor, $blueColor)
+  }
+
+  &.green-btn {
+    @include button-style($greenColor, $greenColor, $greenColor)
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  svg, i, img {
+    width: 20px;
+  }
+}

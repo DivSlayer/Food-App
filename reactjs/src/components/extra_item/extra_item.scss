@@ -1,0 +1,69 @@
+@import ".././../styles/colors";
+
+.extras-item {
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+
+    .extras-img {
+      height: 100px;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+
+      img {
+        width: 15px;
+      }
+
+      p {
+        span {
+          font-size: 10px;
+          direction: ltr;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    align-items: flex-start;
+    row-gap: 15px;
+    flex-direction: column;
+
+    p {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      &.active {
+        span {
+          color: $textColor;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+
+      span {
+        font-size: 12px;
+        color: $lightTextColor;
+
+      }
+    }
+  }
+}

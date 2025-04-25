@@ -1,0 +1,125 @@
+@import "./colors";
+
+.form-control {
+
+  &.textarea, &.select {
+    width: 100%;
+    max-lines: 5;
+    max-height: 150px;
+    transition: 0s;
+    max-width: 100%;
+    min-width: 50%;
+    min-height: 45px;
+    height: 45px;
+  }
+
+  &.select option {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5
+  }
+
+  &.input {
+    padding: 14px 20px 7px 35px;
+    background-color: $bgColor;
+    border-radius: 10px;
+    border: 1px solid $borderColor;
+    font-size: 14px;
+
+    &:focus {
+      border-color: $yellowColor;
+    }
+  }
+
+  &.help-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    p {
+      font-size: 12px;
+      color: $lightTextColor;
+      font-weight: 400;
+    }
+
+    a {
+      color: $yellowColor;
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+
+}
+
+.form-group {
+  width: 100%;
+  position: relative;
+
+  &.focused {
+    svg path {
+      stroke: $yellowColor;
+    }
+  }
+
+  input {
+    width: 100%;
+  }
+
+
+  svg {
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    path {
+      stroke: $lightTextColor;
+    }
+  }
+
+  .suffix {
+    height: 20px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .label {
+    position: absolute;
+    color: $lightTextColor;
+    font-size: 14px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    opacity: 1;
+
+    &.focused {
+      color: $yellowColor !important;
+      font-size: 10px;
+      top: 0;
+      background-color: $lightBgColor !important;
+      display: block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      opacity: 1;
+    }
+
+    &.valued {
+      color: #fff;
+      font-size: 10px;
+      top: 0;
+      background-color: $lightTextColor;
+      display: block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      opacity: 1;
+    }
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+}

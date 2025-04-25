@@ -1,0 +1,73 @@
+@import "../../styles/colors";
+
+.single-address {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: $lightBgColor;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  row-gap: 50px;
+  overflow: hidden;
+  overflow-y: auto;
+
+
+  .loading {
+    margin: 30px auto 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .delete-button {
+    &:hover {
+      svg {
+        path {
+          stroke: $redColor;
+        }
+      }
+    }
+  }
+
+  .details-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 50px;
+
+    .form {
+      width: 90%;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      column-gap: 2%;
+      row-gap: 20px;
+
+      .form-group {
+        width: 100%;
+      }
+
+      .submit-btn {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .single-address {
+    .details-holder {
+      .form {
+        width: 80%;
+
+        .form-group {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+name: food_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0-86.0.dev
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.17
+  intl: ^0.20.1
+  get: ^4.6.6
+  flutter_map: ^7.0.2
+  location: ^7.0.1
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+  provider: ^6.1.2
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  bloc: ^8.1.4
+  rxdart: ^0.28.0
+  dio: ^5.7.0
+  shimmer: ^3.0.0
+  custom_refresh_indicator: ^4.0.1
+  flutter_html:
+  json_annotation: ^4.9.0
+  shamsi_date: ^1.0.4
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  json_serializable:
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+# The following section is specific to Flutter packages.
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/fonts/
+    - assets/vectors/
+    - assets/images/
+  fonts:
+    - family: Vazir
+      fonts:
+        - asset: assets/fonts/Vazir/ExtraLight.ttf
+          weight: 100
+        - asset: assets/fonts/Vazir/Light.ttf
+          weight: 300
+        - asset: assets/fonts/Vazir/Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Vazir/Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Vazir/SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Vazir/Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Vazir/ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Vazir/Black.ttf
+          weight: 900
+    - family: Kalameh
+      fonts:
+        - asset: assets/fonts/Kalameh/Thin.ttf
+          weight: 300
+        - asset: assets/fonts/Kalameh/Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Kalameh/Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Kalameh/Black.ttf
+          weight: 900
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Poppins/ThinItalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/Poppins/ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Poppins/ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/Poppins/Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins/LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/Poppins/Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins/Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Poppins/Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins/MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins/SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins/SemiBoldItalic.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins/Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins/BoldItalic.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins/ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins/ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/Poppins/Black.ttf
+          weight: 900
+        - asset: assets/fonts/Poppins/BlackItalic.ttf
+          weight: 900
+          style: italic
+    - family: Dana
+      fonts:
+        - asset: assets/fonts/Dana/Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Dana/ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Dana/Light.ttf
+          weight: 300
+        - asset: assets/fonts/Dana/Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Dana/Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Dana/SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Dana/Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Dana/ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Dana/Black.ttf
+          weight: 900
+    - family: Lalezar
+      fonts:
+        - asset: assets/fonts/Lalezar/Regular.ttf
+          weight: 400
+    - family: IRANSans
+      fonts:
+        - asset: assets/fonts/IRANSans/UltraLight.ttf
+          weight: 100
+        - asset: assets/fonts/IRANSans/Light.ttf
+          weight: 300
+        - asset: assets/fonts/IRANSans/Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IRANSans/Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IRANSans/Bold.ttf
+          weight: 700
+        - asset: assets/fonts/IRANSans/Black.ttf
+          weight: 900
