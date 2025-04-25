@@ -1,4 +1,5 @@
 # Frontend (ReactJS) – Food Delivery Project
+[پارسی <img src="../svgs/ir_flag.svg" width="20"/>](REDAME-FA.md)
 
 This directory contains the ReactJS web client used by restaurants to manage their menu, branches, and coverage areas. Written in TypeScript with a strict models‐based architecture for clarity and scalability.
 

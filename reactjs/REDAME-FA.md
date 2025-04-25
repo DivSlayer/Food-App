@@ -1,6 +1,7 @@
 <div dir="rtl" align="right" style="text-align: right">
 
 # فرانت‌اند (ReactJS) – پروژه سفارش غذای آنلاین
+[English <img src="https://raw.githubusercontent.com/hjnilsson/country-flags/master/svg/us.svg" width="20"/>](README.md)
 
 این پوشه شامل کلاینت وب ReactJS است که توسط رستوران‌ها برای مدیریت منو، شعب، و محدوده‌های پوشش استفاده می‌شود. نوشته‌شده با TypeScript و معماری مبتنی بر مدل‌ها برای خوانایی و مقیاس‌پذیری.
 
