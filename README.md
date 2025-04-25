@@ -17,7 +17,7 @@ Each component has its own dedicated README with detailed setup and usage instru
 
 ### 🔗 Links to Part READMEs
 - [Backend (Django)](backend/README.md)
-- [Frontend (ReactJS)](frontend/README.md)
+- [Frontend (ReactJS)](reactjs/README.md)
 - [Mobile App (Flutter)](mobile/README.md)
 
 

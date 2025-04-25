@@ -16,7 +16,7 @@
 
 ### 🔗 لینک فایل های README
 - [Backend (Django)](backend/README.md)
-- [Frontend (ReactJS)](frontend/README.md)
+- [Frontend (ReactJS)](reactjs/README.md)
 - [Mobile App (Flutter)](mobile/README.md)
 
 ---
