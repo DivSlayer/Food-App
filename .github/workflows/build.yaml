@@ -8,7 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions: # Add this section
+      contents: write
     steps:
       - uses: actions/checkout@v2 # Checks out your repositorym
 
@@ -30,7 +31,7 @@ jobs:
         with:
           name: app-release
           path: mobile/build/app/outputs/flutter-apk/app-release.apk
-          
+
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
