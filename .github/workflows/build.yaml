@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2 # Checks out your repository
+      - uses: actions/checkout@v2 # Checks out your repositorym
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
