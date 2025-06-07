@@ -24,4 +24,9 @@ jobs:
       - name: Build APK # Or 'flutter build ios' for iOS
         run: flutter build apk
         working-directory: mobile
-        # Optional: Add artifact uploading here if you want to store the build
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-release
+          path: mobile/build/app/outputs/flutter-apk/app-release.apk
