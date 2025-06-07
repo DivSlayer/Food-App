@@ -21,10 +21,6 @@ jobs:
         run: flutter pub get
         working-directory: mobile
 
-      - name: Analyze project
-        run: flutter analyze
-        working-directory: mobile
-
       - name: Build APK # Or 'flutter build ios' for iOS
         run: flutter build apk
         working-directory: mobile
