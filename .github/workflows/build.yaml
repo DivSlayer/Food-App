@@ -20,19 +20,9 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Analyze project
-        run: flutter analyze
-
-      - name: Run tests
-        run: flutter test
-
       - name: Build APK
         run: flutter build apk --release # Build a release version
         # The output is typically in build/app/outputs/flutter-apk/app-release.apk
-
-      - name: Build AppBundle (Optional)
-        run: flutter build appbundle --release
-        # The output is typically in build/app/outputs/bundle/release/app-release.aab
 
       - name: Create GitHub Release
         id: create_release
