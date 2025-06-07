@@ -16,18 +16,20 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.32.0' # Specify your desired Flutter version
-      - name: Enter Directory
-        run: cd mobile
-        
+
       - name: Install dependencies
         run: flutter pub get
+        working-directory: mobile
 
       - name: Analyze project
         run: flutter analyze
+        working-directory: mobile
 
       - name: Run tests
         run: flutter test
+        working-directory: mobile
 
       - name: Build APK # Or 'flutter build ios' for iOS
         run: flutter build apk
+        working-directory: mobile
         # Optional: Add artifact uploading here if you want to store the build
