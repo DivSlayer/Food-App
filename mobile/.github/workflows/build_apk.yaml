@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main # or your default branch, e.g., master
+    tags:
+      - 'v*' # This will trigger on tags like v1.0.0, v1.2, etc.
 
 jobs:
   build:
