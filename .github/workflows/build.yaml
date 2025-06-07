@@ -1,32 +1,71 @@
-name: Flutter CI
+name: Flutter CI & Release
 
 on:
   push:
-    branches:
-      - main # Or your default branch
+    tags:
+      - 'v*' # Trigger on tags like v1.0, v1.2.3, etc.
 
 jobs:
-  build:
+  build_and_release:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2 # Checks out your repositorym
+      - uses: actions/checkout@v3 # Checks out your repository
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.32.0' # Specify your desired Flutter version
+          flutter-version: '3.16.9' # Specify your desired Flutter version
 
       - name: Install dependencies
         run: flutter pub get
-        working-directory: mobile
 
-      - name: Build APK # Or 'flutter build ios' for iOS
-        run: flutter build apk --release
-        working-directory: mobile
+      - name: Analyze project
+        run: flutter analyze
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - name: Run tests
+        run: flutter test
+
+      - name: Build APK
+        run: flutter build apk --release # Build a release version
+        # The output is typically in build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Build AppBundle (Optional)
+        run: flutter build appbundle --release
+        # The output is typically in build/app/outputs/bundle/release/app-release.aab
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions
         with:
-          name: app-release
-          path: mobile/build/app/outputs/flutter-apk/app-release.apk
+          tag_name: ${{ github.ref_name }} # Uses the tag that triggered the workflow
+          release_name: Release ${{ github.ref_name }}
+          body: |
+            Automated release for ${{ github.ref_name }}
+            See [CHANGELOG.md](CHANGELOG.md) for details.
+            *(You can also use GitHub's auto-generated release notes feature)*
+          draft: false
+          prerelease: false # Set to true if this is a pre-release
+
+      - name: Upload APK to Release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # Gets the upload URL from the create_release step
+          asset_path: build/app/outputs/flutter-apk/app-release.apk
+          asset_name: app-release.apk
+          asset_content_type: application/vnd.android.package-archive
+
+      - name: Upload AppBundle to Release (Optional)
+        if: success() # Only run if previous steps were successful
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: build/app/outputs/bundle/release/app-release.aab
+          asset_name: app-release.aab
+          asset_content_type: application/octet-stream
