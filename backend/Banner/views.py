@@ -9,7 +9,6 @@ from Banner.serializers import BannerSerializer
 class BannerAPIListView(APIView):
     def get(self, request):
         banners = Banner.objects.all()
-        print(banners.first().content)
         if len(banners) > 0:
             return Response({'banners': [BannerSerializer(banners.first()).data]})
         else:

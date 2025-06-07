@@ -1,0 +1,2 @@
+C:/Users/ASUS/Documents/GitHub/Food-App/mobile/android/app/.cxx/Debug/615472r2/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/Documents/GitHub/Food-App/mobile/android/app/.cxx/Debug/615472r2/armeabi-v7a/CMakeFiles/rebuild_cache.dir

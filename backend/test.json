@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "uuid": "ATifr3kHr2ceDTz",
+      "content": "ممنون از نظر شما",
+      "comment_for": {
+        "food": {
+          "uuid": "ewxbzT2tSzLrVLM",
+          "name": "پیتزا سیسیلی",
+          "image": "http://127.0.0.1:80/media/Foods/%D9%BE%DB%8C%D8%AA%D8%B2115-ewxbzT2tSzLrVLM/image.jpg",
+          "details": "سیسیلی",
+          "preparation_time": 150,
+          "rating": "3.0",
+          "sizes": [
+            {
+              "id": 4,
+              "uuid": "MF3b8U8XTXjhDuR",
+              "name": "Medium",
+              "details": "28 * 28",
+              "price": 100000,
+              "food": 3
+            }
+          ],
+          "restaurant_info": {
+            "uuid": "RdvBfZcfOQXeIcn",
+            "name": "کوی فلسطین",
+            "image": "http://127.0.0.1:80/media/Restaurants/%DA%A9%D9%88%DB%8C%20%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-RdvBfZcfOQXeIcn/image.png",
+            "logo": "http://127.0.0.1:80/media/Restaurants/%DA%A9%D9%88%DB%8C%20%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-RdvBfZcfOQXeIcn/logo.png"
+          },
+          "restaurant": null,
+          "comments_count": 2,
+          "rating_count": 2,
+          "category": "X8aeGQ85Z0kF6mp"
+        }
+      },
+      "comment_from": {
+        "first_name": "a",
+        "last_name": "b",
+        "profile_image": "http://127.0.0.1:80/media/profiles/default-profile.png"
+      },
+      "published_at": "2025-04-10T15:12:07.334912Z"
+    }
+  ]
+}

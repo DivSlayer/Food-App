@@ -355,12 +355,13 @@ class ServerResource {
       _dio.options.headers['Authorization'] = "Bearer ${token!.access}";
       Response response = await _dio.get(link);
       if (response.statusCode == 200) {
+        print(jsonEncode(response.data));
         CommentResponse res = CommentResponse.fromJson(response.data);
         return res;
       }
       return CommentResponse.withError('something went wrong');
     } catch (e) {
-      print(e);
+      rethrow;
       return CommentResponse.withError('something went wrong');
     }
   }
@@ -377,7 +378,6 @@ class ServerResource {
       FormData formData = FormData.fromMap(comment.toJson());
       Response response = await _dio.post(link, data: formData);
       if (response.statusCode == 200) {
-        print(response.data);
         CommentResponse res = CommentResponse.fromJson(response.data);
         return res;
       }

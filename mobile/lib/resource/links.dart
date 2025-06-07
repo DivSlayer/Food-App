@@ -1,5 +1,5 @@
 class Links {
-  static String server = 'http://172.17.49.190:80';
+  static String server = 'http://172.17.49.238:8000';
   static String registerURL = '$server/api/account/register';
   static String serverCheckURL = '$server/api/check';
   static String getUserURL = '$server/api/account/details';
