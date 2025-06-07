@@ -1,31 +1,36 @@
-name: Flutter CI & Release
+name: Flutter CI
 
 on:
   push:
-    tags:
-      - 'v*' # Trigger on tags like v1.0, v1.2.3, etc.
+    branches:
+      - main # Or your default branch
 
 jobs:
-  build_and_release:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3 # Checks out your repository
+      - uses: actions/checkout@v2 # Checks out your repositorym
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.16.9' # Specify your desired Flutter version
+          flutter-version: '3.32.0' # Specify your desired Flutter version
 
       - name: Install dependencies
         run: flutter pub get
         working-directory: mobile
 
-      - name: Build APK
-        run: flutter build apk --release # Build a release version
-        # The output is typically in build/app/outputs/flutter-apk/app-release.apk
+      - name: Build APK # Or 'flutter build ios' for iOS
+        run: flutter build apk --release
         working-directory: mobile
 
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release
+          path: mobile/build/app/outputs/flutter-apk/app-release.apk
+          
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
@@ -50,14 +55,3 @@ jobs:
           asset_path: mobile/build/app/outputs/flutter-apk/app-release.apk
           asset_name: app-release.apk
           asset_content_type: application/vnd.android.package-archive
-
-      - name: Upload AppBundle to Release (Optional)
-        if: success() # Only run if previous steps were successful
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: mobile/build/app/outputs/bundle/release/app-release.aab
-          asset_name: app-release.aab
-          asset_content_type: application/octet-stream
