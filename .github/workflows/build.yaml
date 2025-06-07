@@ -22,11 +22,11 @@ jobs:
         working-directory: mobile
 
       - name: Build APK # Or 'flutter build ios' for iOS
-        run: flutter build apk
+        run: flutter build apk --release
         working-directory: mobile
 
       - name: Upload APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: app-release
           path: mobile/build/app/outputs/flutter-apk/app-release.apk
