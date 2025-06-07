@@ -15,7 +15,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.30.0-1.0.pre.408' # Specify your desired Flutter version
+          flutter-version: '3.32.0' # Specify your desired Flutter version
       - name: Enter Directory
         run: cd mobile
         
