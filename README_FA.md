@@ -36,6 +36,47 @@
 | بک‌اند    | Django + DRF            | `/backend`     |
 | فرانت‌اند | ReactJS                 | `/frontend`    |
 | موبایل    | Flutter                 | `/mobile_app`  |
+### ساختار پروژه
+
+
+### Project Structure
+
+```plaintext
+.
+├── README.md
+├── LICENSE
+├── docker-compose.yml
+├── .gitignore
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml
+├── backend/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── models/
+│   │   ├── routers/
+│   │   ├── services/
+│   │   ├── schemas/
+│   │   └── utils/
+│   └── tests/
+│       ├── test_main.py
+│       └── test_services.py
+└── frontend/
+    ├── Dockerfile
+    ├── pubspec.yaml
+    ├── lib/
+    │   ├── main.dart
+    │   └── src/
+    │       ├── blocs/
+    │       ├── models/
+    │       ├── pages/
+    │       ├── widgets/
+    │       └── utils/
+    └── test/
+```
 
 ### شروع به کار
 
