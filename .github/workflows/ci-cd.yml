@@ -56,17 +56,17 @@ jobs:
 
       - name: Install Flutter deps
         run: |
-          cd frontend
+          cd reactjs
           flutter pub get
 
       - name: Lint frontend
         run: |
-          cd frontend
+          cd reactjs
           flutter analyze
 
       - name: Run frontend tests
         run: |
-          cd frontend
+          cd reactjs
           flutter test --coverage
 
   build-and-deploy:
@@ -91,11 +91,11 @@ jobs:
 
       - name: Build and push frontend image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USER }}/foodapp-frontend:latest frontend
-          docker push ${{ secrets.DOCKERHUB_USER }}/foodapp-frontend:latest
+          docker build -t ${{ secrets.DOCKERHUB_USER }}/foodapp-reactjs:latest reactjs
+          docker push ${{ secrets.DOCKERHUB_USER }}/foodapp-reactjs:latest
 
       - name: Deploy to production
         run: |
           ssh ${{ secrets.SERVER_SSH }} "docker pull ${{ secrets.DOCKERHUB_USER }}/foodapp-backend:latest && \
-                                        docker pull ${{ secrets.DOCKERHUB_USER }}/foodapp-frontend:latest && \
+                                        docker pull ${{ secrets.DOCKERHUB_USER }}/foodapp-reactjs:latest && \
                                         docker-compose -f /home/deploy/foodapp/docker-compose.yml up -d --remove-orphans"
