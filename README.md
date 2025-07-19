@@ -40,6 +40,46 @@ A complete food delivery solution with advanced features:
 | Frontend  | ReactJS               | `/frontend`     |
 | Mobile    | Flutter               | `/mobile_app`   |
 
+
+### Project Structure
+
+```plaintext
+.
+├── README.md
+├── LICENSE
+├── docker-compose.yml
+├── .gitignore
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml
+├── backend/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── models/
+│   │   ├── routers/
+│   │   ├── services/
+│   │   ├── schemas/
+│   │   └── utils/
+│   └── tests/
+│       ├── test_main.py
+│       └── test_services.py
+└── frontend/
+    ├── Dockerfile
+    ├── pubspec.yaml
+    ├── lib/
+    │   ├── main.dart
+    │   └── src/
+    │       ├── blocs/
+    │       ├── models/
+    │       ├── pages/
+    │       ├── widgets/
+    │       └── utils/
+    └── test/
+```
+
 ### Getting Started
 
 #### Prerequisites
