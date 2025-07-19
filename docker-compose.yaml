@@ -6,7 +6,7 @@ services:
       - "8000:8000"
     environment:
       - ENV=dev
-  frontend:
-    build: ./frontend
+  reactjs:
+    build: ./reactjs
     ports:
       - "3000:80"
