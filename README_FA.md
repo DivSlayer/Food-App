@@ -38,9 +38,6 @@
 | موبایل    | Flutter                 | `/mobile_app`  |
 ### ساختار پروژه
 
-
-### Project Structure
-
 ```plaintext
 .
 ├── README.md
