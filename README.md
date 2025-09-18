@@ -1,8 +1,31 @@
 
 ![alt-text](mockups/banner.png "Header Card")
 
-# Food Delivery Project
+# 🍔 Food Delivery App (Full Stack)
 [پارسی <img src="./svgs/ir_flag.svg" width="20"/>](README_FA.md)
+
+
+---
+
+## ✨ Features
+- Multi-branch restaurant support
+- Real-time order tracking
+- Online payment integration
+- Admin panel for restaurants & branches
+- Customer-friendly mobile & web UI
+- Analytics & sales reporting
+
+---
+
+## 📸 Screenshots
+
+| Mobile App | Admin Panel |
+|------------|-------------|
+| ![Mobile](mobile/screenshots/home_screen.png) | ![Web](reactjs/screenshots/home_screen.png) |
+| ![Mobile](mobile/screenshots/food_screen.png) | ![Web](reactjs/screenshots/map_screen.png) |
+
+---
+
 
 
 ## Table of Contents
@@ -119,20 +142,6 @@ flutter run
 3. Add menu items and set up branches
 4. Place orders via web or mobile
 5. Track delivery in real-time
-
-### 📸 Screenshots
-
-#### Web Frontend
-
-| Home                                                               | Map Screen                                                        |
-|--------------------------------------------------------------------|-------------------------------------------------------------------|
-| <img src="reactjs/screenshots/home_screen.png" style="width:100%"> | <img src="reactjs/screenshots/map_screen.png" style="width:100%"> |
-
-
-#### Mobile App
-| Home                                                                 | Food Screen                                                         |
-|----------------------------------------------------------------------|---------------------------------------------------------------------|
-| <img src="mobile/screenshots/home_screen.png" style="height:400px;"> | <img src="mobile/screenshots/food_screen.png" style="height:400px"> |
 
 
 📄 Read this in [Persian](README_FA.md)
