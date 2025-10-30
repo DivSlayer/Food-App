@@ -2,7 +2,7 @@
 ![alt-text](mockups/banner.png "Header Card")
 
 # 🍔 Food Delivery App (Full Stack)
-[پارسی <img src="./svgs/ir_flag.svg" width="20"/>](README_FA.md)
+[فارسی ](README_FA.md)
 
 
 ---
